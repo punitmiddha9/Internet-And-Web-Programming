@@ -1,0 +1,146 @@
+html {
+
+    scroll-behavior: smooth;
+}
+
+*,*::after,*::before {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #132b47;
+    width: 100%;
+    /* background-image: url(pixeltrue-contact.svg);   
+    background-repeat: no-repeat;
+    background-size: cover;     */
+}
+
+nav {
+    z-index: 1;
+    -webkit-box-shadow: 0 8px 6px -6px #999;
+    -moz-box-shadow: 0 8px 6px -6px #999;
+    box-shadow: 0 8px 6px -6px #999;
+    position: fixed; 
+    width: 100%;
+    top: 0;   
+}
+
+.nav-body {
+    
+    display: flex;
+    padding: 10px 0;
+    font-size: 20px;
+    background-color: #ec4646;
+    
+}
+
+.nav-logo {
+    
+    margin-left: auto;
+    text-align: center;
+    padding-top: 5px;
+    width: 40%;
+    color: #1b2021;
+}
+
+.nav-link {
+    
+    display: inline-block;
+    padding: 10px 30px;
+}
+
+.nav-link > a {
+    text-decoration: none;
+    color: #1b2021;
+}
+
+.nav-items {
+
+    width: 60%;
+    text-align: center;
+
+}
+
+footer {
+
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    color: #1b2021;
+    font-weight: 800;
+    padding: 5px 0;
+    text-align: center;
+    border: 2px solid #999;
+    background-color: #ec4646;
+}
+
+.content {
+
+    display: flex;
+    background-color: #132b47;
+    color: #ffffff;
+
+}
+
+.content > img {
+
+    height: 100%;
+    width: 60%;
+    background-color: #132b47;
+}
+
+.contact-box {
+
+    height: 100%;
+    width: 40%;
+    padding: 50px;
+    margin-top: 5vh;
+    font-size: 24px;
+    /* background-color: white; */
+}
+
+.contact-box form {
+
+    margin-top: 5vh;
+    padding-bottom: 10px;    
+}
+
+.contact-box h1 {
+
+    text-align: center;
+}
+
+.contact-box form div {
+
+    padding: 10px 0px;
+}
+
+#name, #email, #number {
+
+    width: 50%;
+    height: 35px;
+    border-radius: 40px;
+}
+
+#message {
+
+    border-radius: 10px;
+}
+
+button {
+
+    width: 20%;
+    height: 35px;
+    border-radius: 40px;
+    background-color: #ec4646;
+    border: 2px solid #ec4646;
+}
+
+.icons a {
+
+    padding: 5px 10px 5px 0;
+
+}

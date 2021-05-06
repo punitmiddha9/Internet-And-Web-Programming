@@ -1,0 +1,166 @@
+html {
+
+    scroll-behavior: smooth;
+}
+
+*,*::after,*::before {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    background-color: #003f5c;    
+    font-size: 24px;
+}
+
+nav {
+    z-index: 1;
+    -webkit-box-shadow: 0 8px 6px -6px #999;
+    -moz-box-shadow: 0 8px 6px -6px #999;
+    box-shadow: 0 8px 6px -6px #999;
+    position: fixed; 
+    width: 100%;
+    top: 0;   
+}
+
+.nav-body {
+    
+    display: flex;
+    padding: 10px 0;
+    font-size: 20px;
+    background-color: #ec4646;
+    
+}
+
+.nav-logo {
+    
+    margin-left: auto;
+    text-align: center;
+    padding-top: 5px;
+    width: 40%;
+    color: #1b2021;
+}
+
+.nav-link {
+    
+    display: inline-block;
+    padding: 10px 30px;
+}
+
+.nav-link > a {
+    text-decoration: none;
+    color: #1b2021;
+}
+
+.nav-items {
+
+    width: 60%;
+    text-align: center;
+
+}
+
+footer {
+
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    color: #1b2021;
+    font-weight: 800;
+    padding: 5px 0;
+    text-align: center;
+    border: 2px solid #999;
+    background-color: #ec4646;
+    font-size: 20px;
+}
+
+.content {
+
+    width: 1200px;
+    margin: auto;
+    margin-top: 10vh;
+    margin-bottom: 5vh;
+    background-color: #132b47;
+    color: #ffffff;
+}
+
+img {
+
+    width: 200px;
+    height: 125px;
+    margin-left: 30px;
+    float: right;
+    margin-top: 25px;
+}
+
+.career-summary {
+
+    padding: 30px;
+    height: 600px;
+    border-bottom: 2px solid white;
+}
+
+.career-summary > p {
+
+    width: 80%;
+    padding: 25px 0;
+}
+
+.video {
+
+    height: 400px;
+    padding: 25px 100px;
+    border-bottom: 2px solid white;
+}
+
+.Accomplishments > h2 {
+
+    text-align: center;
+    margin-bottom: 2.5rem;
+}
+
+.Accomplishments {
+
+    margin: 2.5rem 0;
+    border-bottom: 2px solid white;
+}
+
+
+.Accomplishments ul {
+
+    margin-top: 2.5rem;
+    margin-left: 2.5rem;
+    padding-bottom: 2.5rem;
+}
+
+.Accomplishments ul li {
+
+    padding: 10px 0;
+}
+
+.About > h2 {
+
+    text-align: center;
+    margin-bottom: 2.5rem;
+}
+
+.About {
+
+    padding: 0 25px;
+    margin-bottom: 5rem;
+    padding-bottom: 10px;
+    border-bottom: 2px solid white;
+}
+
+h4 {
+
+    color: #ec4646;
+    padding-bottom: 15px;
+}
+
+.About p {
+
+    padding-bottom: 15px;
+}
