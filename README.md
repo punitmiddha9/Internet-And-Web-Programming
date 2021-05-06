@@ -5,6 +5,9 @@ CSE3002 - Internet And Web Programming. This repository contains all the Digital
 ## Questons
 
 All Question are related to Web Development.
-Front-end Development: HTML, CSS, JavaScript, DOM, JQuery
-Back-end Development: PHP(primarily), Node.js(secondary)
-Databases: MySQL
+
+Front-end Development: HTML, CSS, JavaScript, DOM, JQuery.
+
+Back-end Development: PHP(primarily), Node.js(secondary).
+
+Databases: MySQL.
