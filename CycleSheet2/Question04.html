@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QUESTION 4</title>
+</head>
+<body style="background-color: coral; color: beige; font-size: 35px;">
+    <script>
+        function happy_number(num) 
+        {
+            var x, y ;
+            var c = [] ;
+             while(num != 1 && c[num] !== true) 
+            {
+                c[num] = true ;
+                y = 0 ;
+                while (num > 0) {
+                    x = num % 10 ;
+                    y += x * x ;
+                    num = (num  - x) / 10 ;
+                }
+                num = y ;
+            }
+            return (num == 1) ;
+        }
+        var no = 5;
+        var num = 1;
+        var f = ''; 
+        while(no-- > 0) 
+        {
+            while(!happy_number(num))
+                num++ ;
+            f = f+(num + ", ") ;
+            num++ ;
+        }
+        document.write('First 5 happy numbers are : '+f);
+    </script>
+</body>
+</html>

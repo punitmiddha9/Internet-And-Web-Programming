@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QUESTION 8</title>
+</head>
+<body>
+    <script>
+        var account = prompt("Enter Account No., Credit Limit, Beginning Balance, Total Expenditures, Total Credit Payments seperated by commas").split(",").map((el)=>{return parseInt(el);});
+
+        var newbalance = account[2]+account[3]-account[4];
+        if(newbalance>account[1]){
+            document.write("New balance ="+newbalance+"<br>Credit Limit Exceeded!");
+        }else{
+            document.write("New balance ="+newbalance+"<br>Credit Limit Not Exceeded!");
+        }
+    </script>
+</body>
+</html>

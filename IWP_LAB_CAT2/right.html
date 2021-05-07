@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {
+            font-family: 'Courier New', Courier, monospace, 'Times New Roman', Times, serif;
+            background-color: tomato;
+        }
+
+        td {
+        padding: 8px;
+        }
+        tr:nth-child(2n) td { padding-top: 0;
+        }
+        tr:nth-child(2n+1) td { padding-bottom: 0;
+        }
+        div { 
+        margin: 0 auto; position: absolute; width: 50%;
+        left: 25%;
+        right: 25%;
+        top: 10%;
+        padding: 0;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <table cellspacing="5px" style="border:2px solid black;width:100%">
+            <form action="#" method="POST" style=" margin:0;padding: 0">
+                <tr>
+                    <td>Source Station</td>
+                    <td>Destination Station</td>
+                </tr>
+                <tr>
+                    <td><input type="text" placeholder="From"></td>
+                    <td><input type="text" placeholder="To"></td>
+                </tr>
+                <tr>
+                    <td>Train Name</td>
+                    <td>Coach Number</td>
+                </tr>
+                <tr>
+                    <td>
+                    <select>
+                        <option >Rajdhani Express</option>
+                        <option >Shatabdi Express</option>
+                        <option >Durunto Express</option>
+                        <option >GareebRath</option>
+                        <option >Chennai Express</option>
+                    </select>
+                    </td>
+                    <td>
+                        <select>
+                        <option >S1</option>
+                        <option >S2</option>
+                        <option >S3</option>
+                        <option >S4</option>
+                        <option >S5</option>
+                        <option >S6</option>
+                        <option >S7</option>
+                        <option >S8</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Date</td>
+                    <td>Time</td>
+                </tr> 
+                <tr>
+                    <td><input type="date"></td>
+                    <td><input type="time"></td>
+                </tr>
+                <tr>
+                    <td>Gender</td>
+                    <td>Count</td>
+                </tr>
+                <tr>
+                    <td>
+                        <select>
+                            <option >Male</option>
+                            <option >Female</option>
+                        </select>
+                    </td>
+                    <td>
+                        <input type="number">
+                    </td>
+                </tr>
+                <tr>
+                    <td align="right"><input type="submit"></td>
+                    <td><input type="reset"></td>
+                </tr>
+            </form>
+        </table>
+    </div>
+</body>
+</html>
+
+
+

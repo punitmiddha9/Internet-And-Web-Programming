@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QUESTION 5</title>
+</head>
+<body>
+    <div id="img-div" style="width:300px;height:300px;border:1px solid black">
+        <img id="img" src="" width="100%">
+    </div>
+    <br><br>
+    Image:<select id="imsel">
+        <optgroup label ="Select Image">
+            <option value="hector-martinez-EG49vTtKdvI-unsplash (1).jpg"    >Image 1</option>
+            <option value="daniel-korpai-H0vKZjt2k1E-unsplash.jpg"       >Image 2</option>
+            <option value="altumcode-Ui3zMjpMrmM-unsplash.jpg">Image 3</option>
+        </optgroup>
+    </select>
+    <button onclick="useim()">Change Image</button>
+
+    Align:<select id="imal">
+        <optgroup label ="Select Size">
+            <option value="left">Left</option>
+            <option value="right">Right</option>
+            <option value="back">Background</option>
+        </optgroup>
+    </select>
+    <button onclick="alignch()">Change Alignment</button>
+
+    <div id="text">
+        <p>Enter Your Text:<input type="text" id="entered" value="" onchange="print()"></p>
+        <p id="Disp"></p>
+        <p>
+            Size:<select id="tsize">
+                <optgroup label ="Select Size">
+                    <option value="1em">Original</option>
+                    <option value="2em">Large</option>
+                    <option value="3em">Very Large</option>
+                </optgroup>
+            </select>
+            <button onclick="tsize()">New Size</button>
+        </p>
+        <p>
+            Size:<select id="tcol">
+                <optgroup label ="Select Color">
+                    <option value="black">Black</option>
+                    <option value="blue">Blue</option>
+                    <option value="red">Red</option>
+                    <option value="green">Green</option>
+                </optgroup>
+            </select>
+            <button onclick="textcolor()">New Color</button>
+        </p>
+    </div>
+
+    <script>
+        function useim(){
+            document.getElementById("img").setAttribute("src",document.getElementById("imsel").value);
+        }
+
+        var rad = document.getElementById("img-div");
+        function alignch(){
+            var al = document.getElementById("imal").value;
+            if(al=="back"){
+                rad.style.opacity="0";
+            }else{
+                rad.style.float=al;
+                rad.style.opacity="1";
+            }
+        }
+
+        function print(){
+            var a  = document.getElementById("entered")
+            document.getElementById("Disp").innerText= a.value;
+        }
+        function tsize(){
+            var ss= document.getElementById("tsize").value;
+            document.getElementById("Disp").style.fontSize=ss;
+        }
+        function textcolor(){
+            var cc= document.getElementById("tcol").value;
+            document.getElementById("Disp").style.color=cc;
+        }
+    </script>
+</body>
+</html>

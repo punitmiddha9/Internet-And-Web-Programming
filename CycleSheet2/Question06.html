@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QUESTION 6</title>
+</head>
+<body>
+    <div>
+        <fieldset >
+            <legend>Calculator</legend>
+            <p>Input Customer Name:<input type ="text" id="name"></p>
+            <p>Parked For (Hours) :<input type ="text" id="hours"></p>
+            <button onclick="Charge()">Calculate</button>
+            <p id = "disp"></p>
+        </fieldset>
+        <p id="display"></p>
+    </div>
+
+    <script>
+        var s= 0;0
+        function Charge(){
+            var n = document.getElementById("name").value;
+            var t = parseFloat(document.getElementById("hours").value);
+            var c = 0;
+            if(t<=3){
+                c=2.00;
+            }
+            else if(t>=3 && t<=24){
+                c= 2.00 + (Math.ceil(t-3)*0.50);
+                if (c>10.00){
+                    c=10.00;
+                }
+            }
+            else{
+                c=15.00;
+            }
+            var inner_c = document.getElementById("disp");
+            inner_c.innerText="Cost of Parking for "+t+" hours, by "+n+" = "+"$"+c.toFixed(2);
+            s=s+c;
+            document.getElementById("display").innerText="Yesterday's Running Total = $"+s.toFixed(2);
+        }
+    </script>
+
+</body>
+</html>

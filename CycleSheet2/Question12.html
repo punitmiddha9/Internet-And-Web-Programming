@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QUESTION 12</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="container">
+        <h2>Blue Cow by Gelett Burgers (Published in The Lark,1992)</h2>
+        <p>I never saw a <b>Blue</b> Cow, I hope to see one; but i can't tell you ,anyhow, i'd rather see than be one</p>
+    </div>
+    <p>Change Color to: 
+        <input type="text" id="color">
+        <button onclick="change()">Change</button>
+    </p>
+    <script>
+        function change(){
+            $("#container").html($("#container").html().replaceAll(/Blue/gi,$("#color").val()));
+        }
+    </script>
+</body>
+</html>

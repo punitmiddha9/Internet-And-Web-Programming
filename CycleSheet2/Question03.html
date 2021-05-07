@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>QUESTION 3</title>
+</head>
+<body style="background-color: tomato; color: azure; font-size: 50px;">
+    <script>
+        var calc = prompt("No.of Miles, Cost and gas consumption. Seperated by commas").split(',').map((a)=>{return parseFloat(a);});
+        document.writeln("Cost = "+( calc[0]/calc[2] * calc[1]).toFixed(2));
+    </script>
+</body>
+</html>

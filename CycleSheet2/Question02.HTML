@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>QUESTION 2</title>
+</head>
+<body style="background-color: tomato; color: azure; font-size: 50px;">
+    <script>
+        const count = (arr)=>{
+            return arr.map((element)=>{
+                return (element>13&&element<29)? 1:0;
+            }).reduce((a,b)=>{
+                return a+b;
+            },0);
+        }
+        document.write("Count(greater than 13 and less than 29) = ");
+        document.write(count([1,14,16,32,21,65,20,15,9,19]));
+    </script>
+</body>
+</html>

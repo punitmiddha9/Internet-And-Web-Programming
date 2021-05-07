@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QUESTION 10</title>
+</head>
+<body>
+    <div>
+        <fieldset>
+            <legend style="text-align: center;">Validate Credit Cards</legend>
+                <p>
+                    Credit Card: <select id="selectcard">
+                        <optgroup label="select card">
+                            <option value="Amex">American Express</option>
+                            <option value="Diner">Diner's Club</option>
+                            <option value="Disc">Discover</option>
+                            <option value="Jcb">JCB</option>
+                            <option value="MasterC">Master Card</option>
+                            <option value="visa">Visa</option>
+                        </optgroup>
+                    </select>
+                </p>
+                <p>
+                    Number:<input type="text" id="num">
+                </p>
+                <p>
+                    <button onclick="validate()">Validate</button>
+                </p>
+            <p id="result"></p>
+        </fieldset>
+    </div>
+    <script>
+        var Amex = /^3[47]\d{13}$/;
+        var Diner = /^(30[0-5]|36\d|38\d)\d{11}$/;
+        var Disc = /^(6011|65\d{2})\d{12}$/;
+        var Jcb = /^(2131|1800|35\d{3})\d{11}/;
+        var MasterC = /^5[1-5]\d{14}$/;
+        var visa = /^(4\d{12}|4\d{15})$/;
+        function validate(){
+            var c = eval(document.getElementById("selectcard").value);
+            var n = document.getElementById("num").value;
+            var p = document.getElementById("result");
+            if(c.test(n)){
+                p.innerHTML="Card No. is Valid!";
+            }else{
+                p.innerHTML="Card no. is InValid!";
+            }
+        }
+    </script>
+</body>
+</html>
