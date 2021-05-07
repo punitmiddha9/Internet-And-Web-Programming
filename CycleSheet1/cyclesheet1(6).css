@@ -1,0 +1,47 @@
+#name   {
+
+    color: deeppink;
+}
+
+#address    {
+
+    color: darkorange;
+}
+
+.desc   {
+
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 2em;
+    font-weight: 700;
+    font-style:inherit;
+    font-stretch:extra-condensed;
+}
+
+.classes    {
+
+    background-color: lawngreen;
+    text-align: center;
+    border: maroon 3px solid;
+    border-width:medium;
+}
+
+div > p     {
+
+    color: brown;
+    font-family: 'Times New Roman', Times, serif;
+    border: 2px dotted 0;
+    background-color: aqua;
+}
+
+div dl dt   {
+
+    font-size: large;
+    color: yellow;
+    background-color: black;
+}
+
+div dl dd   {
+
+    color: blue;
+    padding: 25px;
+}
