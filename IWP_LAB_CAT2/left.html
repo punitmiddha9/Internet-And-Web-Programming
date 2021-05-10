@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {
+            font-family: 'Courier New', Courier, monospace, 'Times New Roman', Times, serif;
+            background-color: chocolate;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        h3 {
+
+            color: steelblue;
+        }
+        .no {
+
+            border: 1px solid black;
+            margin: 50px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="no">
+    <p>Number of tickets</p>
+    <input type="number" name="" id="ticketcount">
+    <br>
+    <input type="submit" onclick="ticketcheck()">
+    <br>
+    <h3 id="h3"></h3>
+    </div>
+    <script>
+        function ticketcheck() {
+        var n = document.getElementById("ticketcount").value; if (n < 250) {
+        document.getElementById("h3").innerText = "Tickets Available";
+        } else
+        document.getElementById("h3").innerText = "Tickets Not Available";
+        }
+    </script>
+</body>
+</html>
